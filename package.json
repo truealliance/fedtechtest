@@ -1,0 +1,39 @@
+{
+  "name": "FEDTechTest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:truealliance/fedtechtest.git",
+  "author": "Jeremy Yang <jeremy.yang@truealliance.com.au>",
+  "license": "MIT",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "browser-sync": "^2.26.14",
+    "child_process": "^1.0.2",
+    "cssnano": "^5.0.4",
+    "del": "^6.0.0",
+    "es6-promise": "^4.2.8",
+    "gulp": "^4.0.2",
+    "gulp-eslint": "^6.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "path": "^0.12.7",
+    "postcss": "^8.3.0",
+    "webpack": "^5.37.1",
+    "webpack-stream": "^6.1.2"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "clean": "gulp clean",
+    "css": "gulp css",
+    "images": "gulp images",
+    "js": "gulp js",
+    "watch": "gulp watch"
+  }
+}

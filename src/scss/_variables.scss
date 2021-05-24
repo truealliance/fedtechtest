@@ -1,0 +1,29 @@
+/* ===== Colours ===== */
+$black: #333;
+$white: #fff;
+$red: #dc3545;
+$yellow: #ffc107;
+$green: #28a745;
+$blue: #007bff;
+$light-grey: #f8f9fa;
+$grey: #eee;
+$dark-grey: #6c757d;
+
+/* ===== Layout options ===== */
+$container-max-width: 1230px;
+$container-max-width-small: 780px;
+$gutter-width: 30px;
+$spacer: 16px;
+
+$breakpoint-sm: 480px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+/* ===== Typography ===== */
+$base-font-size: 16px;
+$base-text-color: $black;
+
+// Font
+$font-sans-serif: "Source Sans Pro", sans-serif;
+$font-serif: "Source Serif Pro", sans-serif;

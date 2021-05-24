@@ -1,0 +1,24 @@
+@import "node_modules/normalize.css/normalize";
+
+:root {
+    font-size: $base-font-size;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:target::before {
+    content: "";
+    display: block;
+    height: $spacer * 3;
+    margin: $spacer * -3 0 0;
+}
+
+body {
+    font-size: $base-font-size;
+}
+
+img {
+    max-width: 100%;
+}
