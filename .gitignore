@@ -1,0 +1,14 @@
+# ignore OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ignore node dependency directories
+node_modules/
+
+# ignore dist directory
+dist/

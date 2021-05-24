@@ -1,0 +1,17 @@
+.footer {
+    background: $light-grey;
+    padding: $spacer 0;
+}
+
+.footer__logo {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 300px;
+
+    > img {
+        display: block;
+        height: auto;
+        object-fit: contain;
+        width: 100%;
+    }
+}

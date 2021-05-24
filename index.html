@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>True Alliance Front End Tech Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Luna - The exploration of the moon">
+    <meta property="og:title" content="Luna - The exploration of the moon">
+    <meta property="og:description" content="Luna - The exploration of the moon">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet"
+        type="text/css"
+        href="dist/css/global.min.css">
+</head>
+
+<body id="body" class="body">
+    <header id="header" class="header">
+        <div class="container">
+            <nav id="navigation" class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#intro" class="nav__link">Introduction</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#layout" class="nav__link">Layout</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#gallery" class="nav__link">Gallery</a>
+                    </li>
+                </ul> <!-- .nav-list -->
+            </nav> <!-- .nav -->
+        </div>
+    </header> <!-- .header -->
+
+    <main id="main" class="main">
+        <div class="container container--small">
+            <h1 class="h1">True Alliance Front End Developer Tech Test</h1>
+        </div>
+
+        <section id="intro" class="section section--intro">
+            <div class="container container--small">
+                <h2 class="h2">Introduction</h2>
+                <p>Here is a quick coding challenge. It is important to note that this is by no
+                    means a test. We just want to get a sense of how you write code and solve
+                    problems.</p>
+                <p>Imagine we are collaborating on this webpage and there are 4 tasks assigned
+                    to you:</p>
+                <ol>
+                    <li>
+                        <p>Fix the layout issue.</p>
+                    </li>
+                    <li>
+                        <p>Add new features to the gallery:</p>
+                    </li>
+                    <ol>
+                        <li>Add lazy load.</li>
+                        <li>Use <strong>CSS grid</strong>.</li>
+                        <li>Add a "Load more" button and use <strong>Ajax</strong> to load content.</li>
+                    </ol>
+                </ol>
+                <p>Please follow the guide in each section and try to complete the tasks. Feel free to modify the code.</p>
+            </div>
+        </section> <!-- .section--intro -->
+
+        <section id="layout" class="section section--layout">
+            <div class="container container--small">
+                <h2 class="h2">Task 1: Overall Layout</h2>
+                <p>As you can see, the footer section is not sitting at the bottom of the window if the
+                    viewport is very tall (e.g. set the viewport to 1400x2000). Can you please try to
+                    make it always sits at the bottom?</p>
+                <p><strong>Note:</strong> Don't use <code>position: fixed;</code> because we
+                    don't want to overlap the page content.</p>
+            </div>
+        </section> <!-- .section--layout -->
+
+        <section id="gallery" class="section section--gallery">
+            <div class="container container--small">
+                <h2 class="h2">Task 2: Gallery</h2>
+                <p>Here is a flexbox gallery with dummy images from
+                    <a href="https://picsum.photos/" target="_blank" el="noopener noreferrer">picsum.photos</a>.
+                    We would like to add a few improvements:</p>
+                <ol>
+                    <li>
+                        <p><strong>Task 2.1 Lazy loading:</strong> We want to improve the performance with
+                            lazy loading. Bonus if you could also improve
+                            <a href="https://web.dev/cls/" target="_blank" el="noopener noreferrer">CLS</a>.
+                        </p>
+                    </li>
+                    <li>
+                        <p><strong>Task 2.2 Convert to CSS grid:</strong> Can you please add a
+                            <code>.gallery--grid</code> modifier to make a masonry layout similar
+                            to the image below using CSS grid? You can follow the Picsum's guide to change the
+                            image ratios (e.g.
+                            <a href="https://picsum.photos/id/1001/200/300" target="_blank" el="noopener noreferrer">https://picsum.photos/id/1001/200/300</a>).
+                        </p>
+                        <p><img src="dist/img/grid-masonry.png"
+                                alt="Masonry grid example"
+                                width="300"></p>
+                    </li>
+                    <li>
+                        <p><strong>Task 2.3 Load more:</strong> Can you implement a "Load more" button?
+                            Clicking
+                            on it will use Ajax to load another set of 12 images from
+                            <a href="https://picsum.photos/" target="_blank" el="noopener noreferrer">picsum.photos</a>
+                            and append below the current gallery. You can choose your images from
+                            <a href="https://picsum.photos/images" target="_blank" el="noopener noreferrer">here</a>.
+                        </p>
+                    </li>
+                </ol>
+            </div>
+            <div class="container container--fluid">
+                <ul id="gallery-grid" class="gallery gallery--flex">
+                    <li class="gallery__item">
+                        <a href="#" class="gallery__link">
+                            <img src="https://picsum.photos/id/10/400"
+                                alt="Dummy Image"
+                                class="gallery__image">
+                        </a>
+                    </li>
+                    <li class="gallery__item">
+                        <a href="#" class="gallery__link">
+                            <img src="https://picsum.photos/id/1000/400"
+                                alt="Dummy Image"
+                                class="gallery__image">
+                        </a>
+                    </li>
+                    <li class="gallery__item">
+                        <a href="#" class="gallery__link">
+                            <img src="https://picsum.photos/id/1001/400"
+                                alt="Dummy Image"
+                                class="gallery__image">
+                        </a>
+                    </li>
+                    <li class="gallery__item">
+                        <a href="#" class="gallery__link">
+                            <img src="https://picsum.photos/id/1003/400"
+                                alt="Dummy Image"
+                                class="gallery__image">
+                        </a>
+                    </li>
+                    <li class="gallery__item">
+                        <a href="#" class="gallery__link">
+                            <img src="https://picsum.photos/id/1006/400"
+                                alt="Dummy Image"
+                                class="gallery__image">
+                        </a>
+                    </li>
+                    <li class="gallery__item">
+                        <a href="#" class="gallery__link">
+                            <img src="https://picsum.photos/id/1015/400"
+                                alt="Dummy Image"
+                                class="gallery__image">
+                        </a>
+                    </li>
+                    <li class="gallery__item">
+                        <a href="#" class="gallery__link">
+                            <img src="https://picsum.photos/id/1022/400"
+                                alt="Dummy Image"
+                                class="gallery__image">
+                        </a>
+                    </li>
+                    <li class="gallery__item">
+                        <a href="#" class="gallery__link">
+                            <img src="https://picsum.photos/id/1023/400"
+                                alt="Dummy Image"
+                                class="gallery__image">
+                        </a>
+                    </li>
+                    <li class="gallery__item">
+                        <a href="#" class="gallery__link">
+                            <img src="https://picsum.photos/id/1040/400"
+                                alt="Dummy Image"
+                                class="gallery__image">
+                        </a>
+                    </li>
+                    <li class="gallery__item">
+                        <a href="#" class="gallery__link">
+                            <img src="https://picsum.photos/id/1042/400"
+                                alt="Dummy Image"
+                                class="gallery__image">
+                        </a>
+                    </li>
+                    <li class="gallery__item">
+                        <a href="#" class="gallery__link">
+                            <img src="https://picsum.photos/id/1056/400"
+                                alt="Dummy Image"
+                                class="gallery__image">
+                        </a>
+                    </li>
+                    <li class="gallery__item">
+                        <a href="#" class="gallery__link">
+                            <img src="https://picsum.photos/id/1065/400"
+                                alt="Dummy Image"
+                                class="gallery__image">
+                        </a>
+                    </li>
+                </ul> <!-- .gallery -->
+            </div>
+        </section> <!-- .section--gallery -->
+    </main> <!-- .main -->
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="footer__logo">
+                <img src="dist/img/ta_logo.png" alt="True Alliance Logo">
+            </div>
+        </div>
+    </footer>
+
+    <script src="dist/js/main.bundle.js"></script>
+</body>
+
+</html>
