@@ -1,0 +1,23 @@
+@use "sass:math";
+
+.nav {
+    padding: $spacer 0;
+}
+
+.nav__list {
+    @extend %list-reset;
+    align-items: center;
+    display: flex;
+}
+
+.nav__item {
+    margin-right: math.div($spacer, 2);
+}
+
+.nav__link {
+    color: $white;
+
+    &:visited {
+        color: $white;
+    }
+}

@@ -1,0 +1,60 @@
+body {
+    color: $base-text-color;
+    font-family: $font-sans-serif;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 3rem 0 1.38rem;
+}
+
+h1 {
+    @extend %heading-bold;
+    font-size: 1.802rem;
+}
+
+h2 {
+    @extend %heading-bold;
+    font-size: 1.602rem;
+}
+
+h3 {
+    @extend %heading-regular;
+    font-size: 1.424rem;
+}
+
+h4 {
+    @extend %heading-regular;
+    font-size: 1.266rem;
+}
+
+h5 {
+    @extend %heading-regular;
+    font-size: 1.125rem;
+}
+
+small,
+.text--small {
+    font-size: 0.889rem;
+}
+
+.text--center {
+    text-align: center;
+}
+
+code {
+    font-size: $base-font-size * 0.875;
+}
+
+a {
+    color: $blue;
+    text-decoration: underline;
+    word-break: break-all;
+}
