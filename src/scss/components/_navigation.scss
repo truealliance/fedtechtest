@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .nav {
     padding: $spacer 0;
 }
@@ -9,7 +11,7 @@
 }
 
 .nav__item {
-    margin-right: $spacer / 2;
+    margin-right: math.div($spacer, 2);
 }
 
 .nav__link {
